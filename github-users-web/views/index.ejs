@@ -1,0 +1,32 @@
+    <h1>Welcome to GitHub User's Favourite Programming Language</h1>
+	<form method="get" action="/user">
+		<table>
+			<tr>
+				<td>
+					<p>GitHub User Name:</p>
+				</td>
+				<td><input type="text" name="userName" value=""
+					required="required" /></td>
+				<td><input type="submit" value="Send" /></td>
+				<td colspan="3">
+					<%if (language !== null) {%>
+						<div style="color: green">
+							<span>
+								[ <%= userName %>] favourite language/s: <%= language %>
+							</span>							
+						</div>
+					<%}%>
+					
+					<%if (errors.length > 0 ) {%>
+						<div style="color: red">
+							<%for (var i = 0; i < errors.length; i++) { %>
+								<span>
+									<%= errors[i] %> 
+								</span>
+							<%}%>
+						</div>
+					<%}%>
+				</td>
+			</tr>
+		</table>
+	</form>
