@@ -17,3 +17,12 @@ To run this application, you need NodeJS and follow next steps:
 1. npm install 
 2. npm start 
 3. The web application will start on port 3000. To try it you should use next URL: http://localhost:3000 
+
+UNIT TESTS
+
+To run unit tests, need installed mocha.
+
+1. npm install -g mocha
+2. npm install
+3. npm test
+
