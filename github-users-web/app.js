@@ -13,5 +13,6 @@ app.set('view engine', 'ejs');
 app.use('/', routes);
 app.use(bodyParser.json());
 
+
 // export app as a global variable
 module.exports = app;
